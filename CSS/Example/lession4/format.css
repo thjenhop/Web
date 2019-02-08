@@ -1,0 +1,18 @@
+body{
+	background-image: url('./image/FB_IMG_1549249175461.jpg');
+
+}
+#head{
+	font-size: 30px;
+	color: lightseagreen;
+}
+
+#all{
+	font-size: 20px;
+	color: lightseagreen;
+}
+
+#part1{
+	background-color: lightseagreen;
+	color: white;
+}

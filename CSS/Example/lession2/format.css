@@ -1,0 +1,41 @@
+#head{
+	font-size: 40px;
+	color: green;
+}
+u[id^="yeu"]{
+	size: 30px;
+	color: blue;
+
+}
+
+div[id="Me"]{
+	width: 2000px;
+	height: 50px;
+	color: fuchsia;
+	background-color: hotpink;
+}
+b[id="Me"]{
+	font-size: 40px;
+	color: black;
+
+}
+
+
+#background{
+	width: 2000px;
+	height: 370px;
+	background-color: khaki;
+	font-size: 20px;
+}
+#part1{
+	color: blue;
+
+}
+
+#part2{
+	color: red;
+}
+
+#part3{
+	color: green;
+}

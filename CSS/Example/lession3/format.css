@@ -1,0 +1,28 @@
+p{
+	font-size: 20px;
+}
+body{
+	
+}
+
+#all{
+	background-color: lightgreen;
+	background-image: url('./image/FB_IMG_1549121772609.jpg') ;
+	background-position: center 50px;
+	background-repeat: no-repeat;
+	height: 1000px;
+
+}
+
+b[id$="de"]{
+	font-size: 30px;
+	color: indianred;
+}
+
+#contain{
+	font-size: 20px;
+}
+
+#img{
+	z-index: 0;
+}

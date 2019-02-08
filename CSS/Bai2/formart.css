@@ -1,0 +1,32 @@
+[id~="span"], [title~="tuong"]{
+	font-weight: bold;
+	font-size: 20px;
+	color: blue;
+}
+
+
+[title="SQRT"]{
+	font-weight: bold;
+	font-size: 20px;
+	color: green;
+}
+p[id = "doanvan2"]{
+	font-weight: bold;
+	font-size: 20px;
+	color: yellow;
+}
+
+p[id$=".1"]{
+	font-weight: bold;
+	font-size: 20px;
+	color: aqua;
+}
+{
+	font-weight: bold;
+	font-size: 20px;
+	color: blue;
+}
+// div p: p la con cua div
+// div + p: all p dat ngay sau div
+// div > p: p la con truc tiep
+// div ~ p: p gan nhat dat sau div. 1 the

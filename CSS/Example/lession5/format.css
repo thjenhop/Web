@@ -1,0 +1,22 @@
+#head{
+	color: deeppink;
+	font-size: 30px;
+}
+
+body{
+	font-size: 20px;
+
+}
+
+#for{
+	color: lightsalmon;
+}
+
+#div{
+	width: 2000px;
+	height: 1000px;
+	background-image: url(./image/FB_IMG_1549121674111.jpg);
+	background-color: black;
+	background-repeat: repeat;
+	background-position: ;
+}

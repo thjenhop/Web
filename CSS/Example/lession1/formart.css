@@ -1,0 +1,17 @@
+#head{
+	font-size: 90px;
+	font-style: bolder;
+
+}
+p[id^="yeu"]{
+	font-size: 30px;
+}
+
+p[id^="thiet"]{
+	font-size: 30px;
+}
+
+[id="contain"]{
+	font-size: 25px;
+	font-style: bolder;
+}

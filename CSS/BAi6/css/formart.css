@@ -1,0 +1,27 @@
+#my-boder{
+	width: 500px;
+	height: 700px;
+	background-color: aqua;
+	z-index: 0;
+	border: 5px solid yellow;
+	border-color: deepskyblue;
+	border-style: dotted;
+	border-width: 30px;
+	border-right-color: yellow;
+
+	border-radius: 20px;
+	border-radius: 10px 20px 30px 40px;
+
+	width: 500px;
+	height: 500px;
+
+	border-radius: 500px;
+	/* Hinh tron:;
+		width: 500px;
+		height: 500px;
+
+		border-radius: 500px;
+	*/
+
+
+}

@@ -1,0 +1,361 @@
+@charset "utf-8";
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+/*
+|||||
+|||||	ĐỊNH DẠNG CHUNG & DESKTOP SIZE
+|||||
+*/
+
+body{	
+	margin:0;
+	padding:0;
+	font-family:roboto;
+	font-size:13pt;
+	color:#000;	
+	background-image:url('ha.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+	min-height:100vh;
+}
+.clear{clear:both}
+.max_width{
+	margin:0 auto;
+	width:1024px;
+}
+
+/* TIÊU ĐỀ */
+h1{
+	margin:0px 0px 0px 0px;
+	padding:40px 0px 0px 0px;
+	color:#fff;
+	text-align:center;
+	font-size:35px;
+	font-weight:normal;
+	text-shadow:1px 1px 2px #000;
+}
+.h2{
+	display:inline-block;
+	margin:0px 0px 0px 0px;
+	padding:100px 0px 20px 0px;
+	font-size:25px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#000
+}
+
+@media screen and (min-width:768px) and (max-width:1099px){	
+	.max_width{
+		width:768px;
+	}
+}
+@media screen and (max-width:767px){
+	.max_width{
+		width:96%;
+	}
+	h1{font-size:30px;margin-bottom:20px}
+	.h2{padding:0px 0px 0px 0px;font-size:22px;margin-bottom:20px;}
+}
+
+/* TOP MENU & LOGO */
+#hc_top_menu{
+	margin:0;
+	padding:25px 0px;
+	background: rgba(255, 255, 255, .9);	
+	width:100%;	
+	box-shadow:1px 1px 2px #ccc;
+	position:fixed;
+	z-index:99999;
+	top:0px;
+	left:0px;
+}
+#hc_top_menu_container{
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	text-align:right;	
+}
+	#logo{
+		margin:0px 0px 0px 0px;
+		padding:5px;
+		position:absolute;
+		top:-20px;
+		left:0px;
+	}
+	a.hc_main_menu{
+		text-decoration:none;
+		color:#000;
+		display:inline-block;
+		text-shadow:1px 1px 2px #fff;
+		margin:0px 8px 0px 8px;
+		outline:none;
+	}
+	a.hc_main_menu:hover{
+		color:#093
+	}
+	a.hc_main_menu.active{
+		color:#093
+	}
+	
+	a.hc_main_menu_mb{
+		text-decoration:none;
+		color:#fff;
+		display:inline-block;
+		width:100%;
+		text-shadow:1px 1px 2px #000;
+		margin:0px 0px 2px 0px;
+		border-bottom:1px solid #000;
+		padding:8px 0px 10px 10px;
+		background-color:#222;
+		outline:none;
+	}
+	a.hc_main_menu_mb:hover{
+		color:#0F0
+	}
+	a.hc_main_menu_mb.active{
+		color:#0F0
+	}
+	
+	#mobile_menu_icon{
+		margin:0px 20px 0px 0px;
+		padding:0px;
+		display:none;
+		font-size:25px;
+		cursor:pointer;
+	}
+	#mobile_menu_icon.active{color:#093}
+	#mobile_menu_pane{
+		margin:0px;
+		padding:5px 10px 10px 0px;
+		background-color:#333;
+		position:absolute;
+		width:240px;
+		min-height:100vh;
+		top:0px;
+		right:-250px;
+		display:none;
+	}
+	
+@media screen and (min-width:768px) and (max-width:1099px){
+	a.hc_main_menu{display:none}
+	#hc_top_menu{padding:17px 0px}
+	#hc_top_menu_container{width:96%}
+	#logo{top:-17px;}
+	#mobile_menu_icon{display:inline-block}
+	#mobile_menu_pane{display:block}
+}
+@media screen and (max-width:767px){
+	a.hc_main_menu{display:none}
+	#hc_top_menu{padding:17px 0px}
+	#hc_top_menu_container{width:96%}
+	#logo{top:-17px;}
+	#mobile_menu_icon{display:inline-block}
+	#mobile_menu_pane{display:block}
+}
+
+/* SLIDE */
+#hc_slide{
+	margin:0px;
+	padding:0px;
+	height:100vh;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	background-color:#FFF;
+	background-image:url('./images/loading.gif');
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+	.slider_img{
+		margin:0;padding:0;
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:1;
+		opacity:0;
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+		filter: blur(5px);
+	}
+	.slider_title{
+		margin:300px 0px 0px 0px;
+		padding:0;
+		position:relative;
+		z-index:2;
+		text-align:center;
+		width:100%;
+		opacity:0;
+		display:none;
+		color:#fff;
+		font-size:45px;
+		font-weight:bold;
+		text-shadow:2px 2px 2px #000;
+	}
+	.slider_desc{
+		margin:10px 0px 0px 0px;
+		padding:0;
+		position:relative;
+		z-index:2;
+		text-align:center;
+		width:100%;
+		display:none;
+		opacity:0;
+		color:#fff;
+		font-size:25px;
+		text-shadow:1px 1px 5px #000;
+	}
+@media screen and (min-width:768px) and (max-width:1099px){		
+	.slider_title{
+		margin:0 auto;
+		width:90%;
+		font-size:30px;
+		text-shadow:2px 2px 5px #000;
+	}
+	.slider_desc{
+		font-size:20px;
+		margin:0 auto;
+		margin-top:10px;
+		width:90%;
+	}
+}
+@media screen and (max-width:767px){
+	.slider_title{
+		margin:0 auto;
+		width:96%;
+		font-size:25px;
+		text-shadow:2px 2px 5px #000;
+	}
+	.slider_desc{
+		font-size:20px;
+		margin:0 auto;
+		margin-top:10px;
+		width:96%;
+	}
+}
+
+/* QUẢNG CÁO */
+#hc_advertising{
+	margin:0px;
+	padding:0px 0px 70px 0px;
+	min-height:100vh;
+	width:100%;
+	position:relative;
+	background-color:#fcc97e;
+	color:#fff;
+}
+	.hc_advertising_image{
+		margin:0px 0px 0px 0px;
+		padding:0px;
+		float:left;
+		width:40%;
+	}
+	.hc_advertising_content{
+		margin:0px 0px 0px 0px;
+		padding:0px;
+		float:left;
+		line-height:25px;
+		color:#333;
+		font-size:14pt;
+		width:60%;
+	}
+	.hc_advertising_image.left{float:left}
+	.hc_advertising_content.left{float:left;text-align:right}
+	
+	.hc_advertising_image.right{float:right}
+	.hc_advertising_content.right{float:right}
+	
+@media screen and (min-width:768px) and (max-width:1099px){	
+	.hc_advertising_content{
+		font-size:12pt;
+	}
+}
+@media screen and (max-width:767px){
+	.hc_advertising_image, .hc_advertising_content{margin:0 auto;width:98%;font-size:13pt;}
+	.hc_advertising_content.left{text-align:left;float:none}
+	.hc_advertising_content.right{text-align:left;float:none}
+	.hc_advertising_image.left{float:none}
+	.hc_advertising_image.right{float:none}
+	.hc_advertising_image{margin-top:40px}
+	.mgt{margin-top:50px;}
+}
+
+/* GIÁ DỊCH VỤ */
+#hc_price{
+	margin:0px;
+	padding:0px 0px 70px 0px;
+	min-height:100vh;
+	width:100%;
+	position:relative;
+	background-color:#C33;
+}
+	.hc_price_image{
+		margin:100px 0px 0px 0px;
+		width:auto;
+		max-width:100%;
+	}
+
+/*BỆNH VIỆN */
+#hc_hospital{
+	margin:0px;
+	padding:0px 0px 70px 0px;
+	min-height:100vh;
+	width:100%;
+	position:relative;
+	background-color:#C36;
+}
+	.hc_hospital_it{
+		margin:30px 0px 0px 21px;
+		padding:0px;
+		float:left;
+		width:240px;
+		height:300px;
+		color:#fff;
+		text-align:center;
+	}
+	.hc_hospital_it img{margin:0px;padding:0px;border:1px solid #ccc;max-width:100%}
+	.hc_hospital_it p{margin:10px 0px 0px 0px;padding:0px;}
+
+@media screen and (min-width:1100px){	
+	.hc_hospital_it.col1{margin-left:0px;}
+}
+@media screen and (min-width:768px) and (max-width:1099px){	
+	.hc_hospital_it{
+		margin:20px 0px 0px 16px;
+	}
+	.hc_hospital_it.rol1{margin-left:}
+}
+@media screen and (max-width:767px){
+	.hc_hospital_it{
+		margin:0 auto;
+		margin-top:20px;
+		float:none;
+	}
+}
+
+/* KHÁCH HÀNG & ĐỐI TÁC */
+#hc_sponsor{
+	margin:0px;
+	padding:0px 0px 70px 0px;
+	min-height:100vh;
+	width:100%;
+	position:relative;
+	background-color:#096;
+}
+
+/* LIÊN HỆ */
+#hc_contact{
+	margin:0px;
+	padding:0px 0px 70px 0px;
+	min-height:100vh;
+	width:100%;
+	position:relative;
+	background-color:#121f48;
+}
+#hc_contact  p{
+	color: white;
+}
